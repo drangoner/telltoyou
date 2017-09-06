@@ -572,10 +572,10 @@
 
 				group.position.set( lx, ly, lz );
 
-				group.rotation.y = t;	
+				group.rotation.y = t/5 - 0.05 * Math.sin(t) ;	
 				console.log(t);
 				group.rotation.z =0.005 * Math.cos(t);	
-				group.rotation.x = t;		
+				group.rotation.x = t/5;		
 			}
 
 			function render() {
